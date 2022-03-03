@@ -1,7 +1,11 @@
 import React from "react"
-
+import Layout from "../components/Layout/layout"
 const About = () => {
-  return (<h1 className="text-success">About</h1>)
+  return (
+    <Layout>
+      <h1 className="text-success">About</h1>
+    </Layout>
+  )
 }
 
 export default About

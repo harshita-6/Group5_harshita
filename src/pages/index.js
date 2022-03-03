@@ -1,12 +1,14 @@
 import React from "react"
+import Layout from "../components/Layout/layout"
 
 const Index = () => {
   return (
-    <div>
-      <div className="card shadow m-2 p-2 text-primary">Test  <div className=" m-2 p-2 btn btn-warning">OK</div></div>
-      <div className=" m-2 p-2 btn btn-warning">OK</div>
-    </div>
+    <Layout>
+      <div className="card shadow m-2 p-2 text-primary">
+        Test <div className=" m-2 p-2 btn btn-warning">OK</div>
+      </div>
+    </Layout>
   )
 }
 
-export default Index 
+export default Index
