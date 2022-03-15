@@ -1,86 +1,69 @@
 import React from "react"
-import {Link} from "gatsby"
+import Login from "../Login/login"
+import SignUp from "../SignUp/SignUp"
+import { BrowserRouter as Router, Switch, Route, Link } from "gatsby"
 
 const Header = () => {
   return (
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark"
-      aria-label="Fifth navbar example"
+      className="navbar navbar-expand-lg navbar-dark fixed-top"
+      style={{ backgroundColor: "#556b2f" }}
     >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          Group-5-HM
+      <div className="container-fluid ">
+        <a className="navbar-brand mb-0 h1" href="/">
+          INEFFABLE
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarsExample05"
-          aria-controls="navbarsExample05"
+          data-bs-target="#navbarsExample01"
+          aria-controls="navbarsExample01"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExample05">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="btn text-light text-decoration-none ">
-              <Link class="text-light text-decoration-none" to="/">
-                Home
+        <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="../">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" to="../Features/Features">
+                  Features
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contact">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          <ul className="navbar-nav ml-last">
+            <li className="nav-item">
+              <Link className="nav-link" to={"/Login"}>
+                Login
               </Link>
             </li>
-            <li class="btn text-light text-decoration-none">
-              <Link class="text-light text-decoration-none" to="/about">
-                About
+            <li className="nav-item">
+              <Link className="nav-link" to={"/sign-up"}>
+                Sign up
               </Link>
             </li>
-            <li class="btn text-light text-decoration-none">
-              <Link class="text-light text-decoration-none" to="/contact">
-                Contact
-              </Link>
-            </li>
-            
-            {/* <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="dropdown05"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdown05">
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
-            </li> */}
           </ul>
-          <form>
-            <input
-              class="form-control"
-              type="text"
-              placeholder="Search"
-              aria-label="Search"
-            ></input>
-          </form>
         </div>
       </div>
     </nav>
   )
 }
+
 export default Header

@@ -5,72 +5,48 @@ import {
   CpuFill,
   GeoFill,
   House,
-  Speedometer,
+  Speedometer2,
   Toggles2,
   Tools,
 } from "react-bootstrap-icons"
+import Image from "../Images/Images"
 
 const Items = [
   {
-    icon: <Bootstrap />,
-    title: "Bootstrap title",
-    description: "Bootstrap description paragraph",
+    
+    name: "HELPLINE NUMBERS",
+    image: "HELPLINE NUMBERS.jpg",
   },
   {
-    icon: <Calendar3 />,
-    title: "Calendar3 title",
-    description: "This is about.....",
+    name: "VENT BOX",
+    image: "VENT BOX.png",
   },
   {
-    icon: <CpuFill />,
-    title: "Calendar3 title",
-    description: "This is about.....",
+    name: "DIARY",
+    image: "Diary.jpg",
   },
   {
-    icon: <GeoFill />,
-    title: "Calendar3 title",
-    description: "This is about.....",
-  },
-  {
-    icon: <House />,
-    title: "Calendar3 title",
-    description: "This is about.....",
-  },
-  {
-    icon: <Speedometer />,
-    title: "Calendar3 title",
-    description: "This is about.....",
-  },
-  {
-    icon: <Toggles2 />,
-    title: "Calendar3 title",
-    description: "This is about.....",
-  },
-  {
-    icon: <Tools />,
-    title: "Calendar3 title",
-    description: "This is about.....",
+    name: "WHAT ARE YOU FEELING?",
+    image: "feel.png",
   },
 ]
 
 const Features = () => {
   return (
-    <div class="container px-4 py-5" id="icon-grid">
-      <h2 class="pb-2 border-bottom text-center">Features</h2>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+    <div className="container text-center py-5">
+      <h1 class="pb-2 border-bottom text-center fw-bold ">Features</h1>
+      <div className="row justify-content-center">
         {Items.map((item, i) => {
           return (
-            <div key={i} class="col d-flex align-items-start">
-              <div
-                class="bi text-muted flex-shrink-0 me-3"
-                style={{ fontSize: "2rem" }}
-              >
-                {item.icon}
-              </div>
-
-              <div>
-                <h4 class="fw-bold mb-0">{item.title}</h4>
-                <p>{item.description}</p>
+            <div key={i} className="col-lg-6 col-md-6 col-sm-12">
+              <div className="card card-body mb-4">
+                <Image
+                  className="d-block mx-lg-auto img-fluid"
+                  style={{ margin: "0px 0px 10px 0px" }}
+                  filename={`${item.image}`}
+                  alt="1"
+                />
+                <h3 className="m-2">{item.name}</h3>
               </div>
             </div>
           )
@@ -79,4 +55,5 @@ const Features = () => {
     </div>
   )
 }
+
 export default Features
