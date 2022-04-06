@@ -1,31 +1,22 @@
+import { Link } from "gatsby"
 import React from "react"
-import {
-  Bootstrap,
-  Calendar3,
-  CpuFill,
-  GeoFill,
-  House,
-  Speedometer2,
-  Toggles2,
-  Tools,
-} from "react-bootstrap-icons"
 import Image from "../Images/Images"
 
 const Items = [
   {
-    
+    path: "",
     name: "HELPLINE NUMBERS",
     image: "HELPLINE NUMBERS.jpg",
   },
-  {
+  {path: "/ventBox",
     name: "VENT BOX",
     image: "VENT BOX.png",
   },
-  {
+  {path: "",
     name: "DIARY",
     image: "Diary.jpg",
   },
-  {
+  {path: "",
     name: "WHAT ARE YOU FEELING?",
     image: "feel.png",
   },
@@ -39,6 +30,7 @@ const Features = () => {
         {Items.map((item, i) => {
           return (
             <div key={i} className="col-lg-6 col-md-6 col-sm-12">
+              <Link to={item.path}>
               <div className="card card-body mb-4">
                 <Image
                   className="d-block mx-lg-auto img-fluid"
@@ -47,7 +39,7 @@ const Features = () => {
                   alt="1"
                 />
                 <h3 className="m-2">{item.name}</h3>
-              </div>
+              </div></Link>
             </div>
           )
         })}

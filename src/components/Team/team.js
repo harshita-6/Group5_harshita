@@ -1,16 +1,8 @@
 import React from "react"
 import {
-  Bootstrap,
-  Calendar3,
-  CpuFill,
   Facebook,
-  GeoFill,
-  House,
   Instagram,
   Linkedin,
-  Speedometer,
-  Toggles2,
-  Tools,
 } from "react-bootstrap-icons"
 
 import Image from "../Images/images"

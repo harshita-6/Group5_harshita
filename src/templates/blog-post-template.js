@@ -35,8 +35,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
               <p>
                 Posted on: <strong>{mdx.frontmatter.date}</strong>
               </p>
-              <h1 class="pb-2 border-bottom text-center text-primary fw-bold"></h1>
-
+             
               <MDXProvider>
                 <MDXRenderer>{mdx.body}</MDXRenderer>
               </MDXProvider>
