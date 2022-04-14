@@ -1,24 +1,36 @@
-import { Link } from "gatsby"
 import React from "react"
+import {
+  Bootstrap,
+  Calendar3,
+  CpuFill,
+  GeoFill,
+  House,
+  Speedometer2,
+  Toggles2,
+  Tools,
+} from "react-bootstrap-icons"
 import Image from "../Images/Images"
-
+import { BrowserRouter as Router, Switch, Route, Link } from "gatsby"
 const Items = [
   {
-    path: "",
     name: "HELPLINE NUMBERS",
     image: "HELPLINE NUMBERS.jpg",
+    path: "/helpline",
   },
-  {path: "/ventBox",
+  {
     name: "VENT BOX",
     image: "VENT BOX.png",
+    path: "#",
   },
-  {path: "",
-    name: "DIARY",
+  {
+    name: "QUOTES",
     image: "Diary.jpg",
+    path: "/ventBox",
   },
-  {path: "",
-    name: "WHAT ARE YOU FEELING?",
+  {
+    name: "LIFE HAPPENS",
     image: "feel.png",
+    path: "/Feeling",
   },
 ]
 
@@ -29,17 +41,18 @@ const Features = () => {
       <div className="row justify-content-center">
         {Items.map((item, i) => {
           return (
-            <div key={i} className="col-lg-6 col-md-6 col-sm-12">
+            <div key={i} className="col-lg-6 col-md-6 col-sm-12 ">
               <Link to={item.path}>
-              <div className="card card-body mb-4">
-                <Image
-                  className="d-block mx-lg-auto img-fluid"
-                  style={{ margin: "0px 0px 10px 0px" }}
-                  filename={`${item.image}`}
-                  alt="1"
-                />
-                <h3 className="m-2">{item.name}</h3>
-              </div></Link>
+                <div className="card card-body mb-4">
+                  <Image
+                    className="d-block mx-lg-auto img-fluid"
+                    style={{ margin: "0px 0px 10px 0px" }}
+                    filename={`${item.image}`}
+                    alt="1"
+                  />
+                  <h2 class="m-2 btn stretched-link">{item.name}</h2>
+                </div>
+              </Link>
             </div>
           )
         })}
