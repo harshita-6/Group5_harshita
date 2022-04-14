@@ -1,5 +1,4 @@
 import React from "react"
-
 import {
   Bootstrap,
   Calendar3,
@@ -73,7 +72,13 @@ const Feel = () => {
           return (
             <div key={i} className="col-lg-4 col-md-5 col-sm-12 ">
               <Link to={item.path}>
-                <div className="card card-body mb-5">
+                <div className="card card-body mb-5" style={{backgroundImage: "URL('')"}}>
+                <Image
+                    className="d-block mx-lg-auto img-fluid"
+                    style={{ margin: "0px 0px 10px 0px"}}
+                    filename={`${item.image}`}
+                    alt="1"
+                  />
                   <h3 className="m-2  btn stretched-link">{item.name}</h3>
                 </div>
               </Link>
