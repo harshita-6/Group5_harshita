@@ -1,16 +1,6 @@
 import React from "react"
-import {
-  Bootstrap,
-  Calendar3,
-  CpuFill,
-  GeoFill,
-  House,
-  Speedometer2,
-  Toggles2,
-  Tools,
-} from "react-bootstrap-icons"
 import Image from "../Images/images"
-import { BrowserRouter as Router, Switch, Route, Link } from "gatsby"
+import { Link } from "gatsby"
 const Items = [
   {
     name: "HELPLINE NUMBERS",
@@ -20,7 +10,7 @@ const Items = [
   {
     name: "VENT BOX",
     image: "VENT BOX.png",
-    path: "/ventbox",
+    path: "/ventBox",
   },
   {
     name: "QUOTES",
@@ -30,7 +20,7 @@ const Items = [
   {
     name: "LIFE HAPPENS",
     image: "feel.png",
-    path: "/Feeling",
+    path: "/blog",
   },
 ]
 
@@ -43,14 +33,16 @@ const Features = () => {
           return (
             <div key={i} className="col-lg-6 col-md-6 col-sm-12 ">
               <Link to={item.path}>
-                <div className="card card-body mb-4">
+                <div className="card card-body shadow mb-4">
                   <Image
-                    className="d-block mx-lg-auto img-fluid"
-                    style={{ margin: "0px 0px 10px 0px" }}
+                    className="d-block mx-lg-auto img-fluid m-4"
+                    style={{
+                      margin: "0 auto",
+                    }}
                     filename={`${item.image}`}
                     alt="1"
                   />
-                  <h2 class="m-2 btn stretched-link">{item.name}</h2>
+                  <h2 class="m-2">{item.name}</h2>
                 </div>
               </Link>
             </div>

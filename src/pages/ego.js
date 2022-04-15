@@ -5,7 +5,6 @@ import Hero from "../components/Hero/hero"
 const Ego = () => {
   return (
     <Layout>
-      <Hero />
       <div className="container-fluid  py-5">
         <h1 class="py-5 border-bottom align-items-center fw-bold text-center ">
           EGO

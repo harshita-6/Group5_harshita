@@ -1,9 +1,5 @@
 import React from "react"
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-} from "react-bootstrap-icons"
+import { Facebook, Instagram, Linkedin } from "react-bootstrap-icons"
 
 import Image from "../Images/images"
 
@@ -25,13 +21,13 @@ const Items = [
 const Team = () => {
   return (
     <div className="container text-center py-5">
-      <h2 class="pb-2 border-bottom text-center">Team Members</h2>
+      <h2 class="pb-2 border-bottom text-center fw-bold">Team Members</h2>
 
       <div className="row justify-content-center">
         {Items.map((item, i) => {
           return (
             <div key={i} className="col-lg-4 col-md-6 col-sm-12">
-              <div className="card card-body mb-4">
+              <div className="card card-body shadow mb-4">
                 <Image
                   className="d-block mx-lg-auto img-fluid"
                   style={{

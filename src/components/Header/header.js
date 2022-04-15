@@ -1,6 +1,5 @@
 import React from "react"
-
-import { BrowserRouter as Router, Switch, Route, Link } from "gatsby"
+import { Link } from "gatsby"
 
 const Header = () => {
   return (
@@ -9,9 +8,9 @@ const Header = () => {
       style={{ backgroundColor: "#556b2f" }}
     >
       <div className="container-fluid ">
-        <a className="navbar-brand mb-0 h1" href="/">
+        <Link className="navbar-brand mb-0 h1" to="/">
           INEFFABLE
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -25,25 +24,35 @@ const Header = () => {
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto ">
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="../">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="btn text-danger fw-bold">
+              <Link className="text-light fw-bold" to="/">
                 Home
-              </a>
+              </Link>
             </li>
-            <li class="nav-item ">
-              <a class="nav-link">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../about">
-                About
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../contact">
+            {/* <li className="btn text-danger fw-bold">
+              <Link className="text-light fw-bold" to="/features">
+                Features
+              </Link>
+            </li> */}
+            <li className="btn text-danger fw-bold">
+              <Link className="text-light fw-bold" to="/contact">
                 Contact
-              </a>
+              </Link>
             </li>
+            <li className="btn text-danger fw-bold">
+              <Link className="text-light  fw-bold" to="/blog">
+                Blog
+              </Link>
+            </li>
+            {/* <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle" href="/" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+            <ul className="dropdown-menu" aria-labelledby="dropdown05">
+              <li><a className="dropdown-item" href="/">Action</a></li>
+              <li><a className="dropdown-item" href="/">Another action</a></li>
+              <li><a className="dropdown-item" href="/">Something else here</a></li>
+            </ul>
+          </li> */}
           </ul>
         </div>
       </div>

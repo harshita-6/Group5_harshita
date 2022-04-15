@@ -34,7 +34,7 @@ const Help = () => {
             <tr>
               <th scope="row">1</th>
               <td className="fw-bold ">
-                <a href="/ANI">Andaman and Nicobar Islands</a>
+                <Link to="/ANI">Andaman and Nicobar Islands</Link>
               </td>
             </tr>
             <tr>
@@ -52,7 +52,7 @@ const Help = () => {
             <tr>
               <th scope="row">4</th>
               <td className="fw-bold ">
-                <a href="/assam">Assam </a>
+                <Link to="/assam">Assam </Link>
               </td>
             </tr>
             <tr>

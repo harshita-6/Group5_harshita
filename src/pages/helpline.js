@@ -5,8 +5,7 @@ import Help from "../components/Help/Help"
 const Helpline = () => {
   return (
     <Layout>
-      <Hero/>
-      <Help/>
+      <Help />
     </Layout>
   )
 }

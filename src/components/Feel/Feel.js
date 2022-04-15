@@ -10,7 +10,7 @@ import {
   Toggles2,
   Tools,
 } from "react-bootstrap-icons"
-import { BrowserRouter as Router, Switch, Route, Link } from "gatsby"
+import { Link } from "gatsby"
 const Items = [
   {
     name: "Struggling with Sexual orientation",
@@ -76,7 +76,7 @@ const Feel = () => {
             <div key={i} className="col-lg-4 col-md-5 col-sm-12 ">
               <Link to={item.path}>
                 <div
-                  className="card card-body mb-5"
+                  className="card card-body mb-4"
                   style={{
                     backgroundImage: `url(${background})`,
                   }}

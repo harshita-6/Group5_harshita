@@ -1,9 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
 import Feel from "../components/Feel/Feel"
-import Hero from "../components/Hero/hero"
 import Image from "../components/Images/images"
-import { BrowserRouter as Router, Switch, Route, Link } from "gatsby"
 const Items = [
   {
     image: "quote1.png",
@@ -42,28 +40,25 @@ const Items = [
 const Quotes = () => {
   return (
     <Layout>
-      <Hero />
       <div className="container text-center py-5">
-        <h1 class="py-5 border-bottom align-items-center fw-bold ">
-          QUOTES
-        </h1>
+        <h1 class="py-5 border-bottom align-items-center fw-bold ">QUOTES</h1>
         <div className="row row-header justify-content-center">
           {Items.map((item, i) => {
             return (
-              <div key={i} className="col-lg-4 col-md-5 col-sm-12" style={{paddingBottom: "50px" }} >
-                
-                
+              <div
+                key={i}
+                className="col-lg-4 col-md-5 col-sm-12"
+                style={{ paddingBottom: "50px" }}
+              >
                 <Image
-              className="d-block mx-lg-auto img-fluid align-self-center"
-              
-              filename={`${item.image}`}
-              alt="1"
-            />
-
-                
+                  className="d-block mx-lg-auto img-fluid align-self-center shadow"
+                  filename={`${item.image}`}
+                  style={{ borderRadius: "10px" }}
+                  alt="1"
+                />
               </div>
-               )
-              })}
+            )
+          })}
         </div>
       </div>
     </Layout>

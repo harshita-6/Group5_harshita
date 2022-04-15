@@ -3,12 +3,13 @@ import Image from "../Images/images"
 
 const Hero = () => {
   return (
-    <container class="jumbotron">
+    <div class="container py-5">
       <div className="row  row-header align-items-center g-5 py-5">
         <div className="col-12 col-md col-sm-6 text-center">
           <h1
             className="display-1 fw-bold lh-2 "
             style={{
+              fontSize: "5rem",
               color: "darkgoldenrod",
               fontFamily: "Brush Script MT, cursive",
             }}
@@ -17,20 +18,24 @@ const Hero = () => {
           </h1>
           <p
             className="lead "
-            style={{ fontFamily: "Brush Script MT, cursive" }}
+            style={{
+              fontSize: "2rem",
+              fontFamily: "Brush Script MT, cursive",
+            }}
           >
             Live a life with no regrets and do it your way.
           </p>
         </div>
         <div className="col-12 col-md col-sm-6 ">
           <Image
-            className="d-block mx-lg-auto img-fluid align-self-center"
+            className="d-block mx-lg-auto img-fluid align-self-center shadow"
             filename="Head.jpg"
+            style={{ borderRadius: "10px" }}
             alt="1"
           />
         </div>
       </div>
-    </container>
+    </div>
   )
 }
 
