@@ -1,4 +1,5 @@
 import React from "react"
+import background from "/src/images/bg.jpg"
 import {
   Bootstrap,
   Calendar3,
@@ -12,21 +13,23 @@ import {
 import { BrowserRouter as Router, Switch, Route, Link } from "gatsby"
 const Items = [
   {
-    name: "Anxiety",
-    path: "#",
+    name: "Struggling with Sexual orientation",
+    path: "/struggling",
   },
   {
     name: "Jealousy",
     path: "/jealousy",
   },
   {
+    name: "Anxiety",
+    path: "/anxiety",
+  },
+
+  {
     name: "Ego",
     path: "/ego",
   },
-  {
-    name: "Struggling with Sexual orientation",
-    path: "/struggling",
-  },
+
   {
     name: "Lack Of Motivation",
     path: "#",
@@ -72,13 +75,12 @@ const Feel = () => {
           return (
             <div key={i} className="col-lg-4 col-md-5 col-sm-12 ">
               <Link to={item.path}>
-                <div className="card card-body mb-5" style={{backgroundImage: "URL('')"}}>
-                <Image
-                    className="d-block mx-lg-auto img-fluid"
-                    style={{ margin: "0px 0px 10px 0px"}}
-                    filename={`${item.image}`}
-                    alt="1"
-                  />
+                <div
+                  className="card card-body mb-5"
+                  style={{
+                    backgroundImage: `url(${background})`,
+                  }}
+                >
                   <h3 className="m-2  btn stretched-link">{item.name}</h3>
                 </div>
               </Link>

@@ -1,15 +1,83 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
-import Hero from "../components/Hero/hero"
-
+import Image from "../components/Images/images"
+import { Link } from "gatsby"
 const Struggling = () => {
   return (
     <Layout>
       <div className="container-fluid  py-5">
-        <h1 class="py-5 border-bottom align-items-center fw-bold text-center ">
-          STRUGGLING WITH SEXUAL ORIENTATION
-        </h1>
+        <Link to={"/struggleWhat"}>
+          <h1
+            class="py-5  display-2 border-bottom align-items-center fw-bold text-center toggle"
+            style={{
+              fontFamily: "Bradley Hand, cursive",
+              textAlign: "justify",
+              color: "rgb(11, 39, 88)",
+            }}
+          >
+            STRUGGLING WITH SEXUAL ORIENTATION
+          </h1>
+        </Link>
         <div className="row row-header justify-content-center ">
+          <div className="row col-12 py-5">
+            <div className="col-md col-sm-3 ">
+              <Image
+                className="d-block mx-lg-auto img-fluid align-self-center"
+                filename="swso.png"
+                alt="1"
+              />
+            </div>
+            <div className=" col-md col-sm-3 ">
+              <Image
+                className="d-block mx-lg-auto img-fluid align-self-center"
+                style={{
+                  transform:
+                    "translate(50px, 100px), rotate(20deg), rotate(-20deg)",
+                }}
+                filename="swso2.png"
+                alt="1"
+              />
+            </div>
+            <div className=" col-md col-sm-3 ">
+              <Image
+                className="d-block mx-lg-auto img-fluid align-self-center"
+                style={{
+                  transform:
+                    "translate(50px, 100px), rotate(20deg), rotate(-20deg)",
+                }}
+                filename="swso3.png"
+                alt="1"
+              />
+            </div>
+          </div>
+          <div
+            className="row  row-header display-7  fw-bold align-items-center py-5"
+            style={{
+              fontFamily: "American Typewriter",
+              textAlign: "justify",
+            }}
+          >
+            <h2>
+              {" "}
+              <h2 style={{ color: "rgb(216, 94, 12)" }}>More on the topic:</h2>
+              <ul>
+                <a href="https://www.youtube.com/watch?v=sCZiXfaa9ro">
+                  https://www.youtube.com/watch?v=sCZiXfaa9ro
+                </a>
+              </ul>
+              <ul>
+                <a href="https://www.youtube.com/watch?v=f55N3O4PPMc">
+                  https://www.youtube.com/watch?v=f55N3O4PPMc
+                </a>
+              </ul>
+              <ul>
+                <a href="https://www.youtube.com/watch?v=4Khn_z9FPmU">
+                  https://www.youtube.com/watch?v=4Khn_z9FPmU
+                </a>
+              </ul>
+            </h2>
+          </div>
+
           <div className="cards card-body ">
             <h3
               className="display-7 fw-bold "

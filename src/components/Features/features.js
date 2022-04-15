@@ -9,7 +9,7 @@ import {
   Toggles2,
   Tools,
 } from "react-bootstrap-icons"
-import Image from "../Images/Images"
+import Image from "../Images/images"
 import { BrowserRouter as Router, Switch, Route, Link } from "gatsby"
 const Items = [
   {
@@ -20,12 +20,12 @@ const Items = [
   {
     name: "VENT BOX",
     image: "VENT BOX.png",
-    path: "#",
+    path: "/ventbox",
   },
   {
     name: "QUOTES",
     image: "Diary.jpg",
-    path: "/ventBox",
+    path: "/quotes",
   },
   {
     name: "LIFE HAPPENS",

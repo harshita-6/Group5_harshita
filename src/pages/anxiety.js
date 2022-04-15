@@ -1,15 +1,23 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
 import Hero from "../components/Hero/hero"
-
+import { Link } from "gatsby"
 const Anxiety = () => {
   return (
     <Layout>
-      <Hero />
       <div className="container-fluid  py-5">
-        <h1 class="py-5 border-bottom align-items-center fw-bold text-center ">
-          ANXIETY
-        </h1>
+        <Link to={"/anxietyWhat"}>
+          <h1
+            class="py-5  display-2 border-bottom align-items-center fw-bold text-center toggle"
+            style={{
+              fontFamily: "Bradley Hand, cursive",
+              textAlign: "justify",
+              color: "rgb(11, 39, 88)",
+            }}
+          >
+            Anxiety
+          </h1>
+        </Link>
         <div className="row row-header justify-content-center ">
           <div className="cards card-body ">
             <h3

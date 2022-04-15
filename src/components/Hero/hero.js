@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "../Images/Images"
+import Image from "../Images/images"
 
 const Hero = () => {
   return (
@@ -15,7 +15,12 @@ const Hero = () => {
           >
             You're Ineffable
           </h1>
-          <p className="lead ">We are here to Help.</p>
+          <p
+            className="lead "
+            style={{ fontFamily: "Brush Script MT, cursive" }}
+          >
+            Live a life with no regrets and do it your way.
+          </p>
         </div>
         <div className="col-12 col-md col-sm-6 ">
           <Image
