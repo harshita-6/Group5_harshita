@@ -3,26 +3,16 @@ import Accordion from "../Accordion/Accordion"
 
 const Item = [
   {
-    title: "Section 1",
-    content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-        laborum cupiditate possimus labore, hic temporibus velit dicta earum
-        suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-        voluptatem.`,
+    title: "What is mental health?",
+    content: `Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act.`,
   },
   {
-    title: "Section 2",
-    content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
-        reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
-        quaerat iure quos dolorum accusantium ducimus in illum vero commodi
-        pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
-        quidem maiores doloremque est numquam praesentium eos voluptatem amet!
-        Repudiandae, mollitia id reprehenderit a ab odit!`,
+    title: "Can you prevent mental health problems?",
+    content: `There's no sure way to prevent mental illness. However, if you have a mental illness, taking steps to control stress, to increase your resilience and to boost low self-esteem may help keep your symptoms under control.`,
   },
   {
-    title: "Section 3",
-    content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-        quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-        dolor ut sequi minus iste? Quas?`,
+    title: "I feel quite low sometimes. Should I see a therapist?",
+    content: `One of the most important things to do if you’re feeling down is to open up. Most people feel more comfortable confiding in a close friend or family member in the first instance. Often simply talking about it helps. If the problem continues and begins to interfere with everyday life, you can go and seek professional help.`,
   },
 ]
 

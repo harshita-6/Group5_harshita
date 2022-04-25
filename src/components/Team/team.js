@@ -1,33 +1,48 @@
 import React from "react"
-import { Facebook, Instagram, Linkedin } from "react-bootstrap-icons"
+import {
+  Bootstrap,
+  Calendar3,
+  CpuFill,
+  Facebook,
+  GeoFill,
+  House,
+  Instagram,
+  Linkedin,
+  Speedometer,
+  Toggles2,
+  Tools,
+} from "react-bootstrap-icons"
 
 import Image from "../Images/images"
 
 const Items = [
   {
-    image: "member1.jpeg",
-    name: "Layla",
+    image: "Deepshikha.jpg",
+    name: "Deepshikha Kumari",
   },
   {
-    image: "member2.jpg",
-    name: "Carl",
+    image: "Divya.jpg",
+    name: "Divya Gupta",
   },
   {
-    image: "member3.jpg",
-    name: "Samuel",
+    image: "Harshita.jpg",
+    name: "Harshita Meena",
   },
 ]
 
 const Team = () => {
   return (
     <div className="container text-center py-5">
-      <h2 class="pb-2 border-bottom text-center fw-bold">Team Members</h2>
+      <h1 class="pb-2 border-bottom text-center fw-bold">Team Members</h1>
 
-      <div className="row justify-content-center">
+      <div
+        className="row justify-content-center"
+        style={{ paddingTop: "50px" }}
+      >
         {Items.map((item, i) => {
           return (
             <div key={i} className="col-lg-4 col-md-6 col-sm-12">
-              <div className="card card-body shadow mb-4">
+              <div className="card card-body mb-4">
                 <Image
                   className="d-block mx-lg-auto img-fluid"
                   style={{
@@ -36,7 +51,7 @@ const Team = () => {
                     width: "200px",
                     borderRadius: "50%",
                   }}
-                  filename={item.image}
+                  filename={`${item.image}`}
                   alt="1"
                 />
                 <h3 className="m-2">{item.name}</h3>

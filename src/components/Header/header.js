@@ -36,7 +36,12 @@ const Header = () => {
               </Link>
             </li> */}
             <li className="btn text-danger fw-bold">
-              <Link className="text-light fw-bold" to="/contact">
+              <Link className="text-light fw-bold" to="/About">
+                About
+              </Link>
+            </li>
+            <li className="btn text-danger fw-bold">
+              <Link className="text-light fw-bold" to="/Contact">
                 Contact
               </Link>
             </li>

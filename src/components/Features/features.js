@@ -4,22 +4,22 @@ import { Link } from "gatsby"
 const Items = [
   {
     name: "HELPLINE NUMBERS",
-    image: "HELPLINE NUMBERS.jpg",
+    image: "HN1.png",
     path: "/helpline",
   },
   {
     name: "VENT BOX",
-    image: "VENT BOX.png",
+    image: "VB.png",
     path: "/ventBox",
   },
   {
     name: "QUOTES",
-    image: "Diary.jpg",
+    image: "LH.png",
     path: "/quotes",
   },
   {
     name: "LIFE HAPPENS",
-    image: "feel.png",
+    image: "WTR.png",
     path: "/blog",
   },
 ]
@@ -28,21 +28,23 @@ const Features = () => {
   return (
     <div className="container text-center py-5">
       <h1 class="pb-2 border-bottom text-center fw-bold ">Features</h1>
-      <div className="row justify-content-center">
+      <div
+        className="row justify-content-center"
+        style={{ paddingTop: "50px" }}
+      >
         {Items.map((item, i) => {
           return (
-            <div key={i} className="col-lg-6 col-md-6 col-sm-12 ">
+            <div key={i} className="col-lg-3 col-md-6 col-sm-12 ">
               <Link to={item.path}>
-                <div className="card card-body shadow mb-4">
+                <div className="card shadow mb-4 ">
                   <Image
-                    className="d-block mx-lg-auto img-fluid m-4"
+                    className="d-block mx-lg-auto img-fluid align-self-center "
                     style={{
                       margin: "0 auto",
                     }}
                     filename={`${item.image}`}
                     alt="1"
                   />
-                  <h2 class="m-2">{item.name}</h2>
                 </div>
               </Link>
             </div>

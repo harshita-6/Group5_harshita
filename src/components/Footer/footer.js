@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const Footer = () => {
   return (
-    <section style={{backgroundColor:'darkolivegreen'}}>
+    <section style={{ backgroundColor: "darkolivegreen" }}>
       <footer className="container container-fluid py-5">
         <div className="row">
           <div className="col-2">
@@ -33,8 +33,6 @@ const Footer = () => {
             </ul>
           </div>
 
-         
-
           <div className="col-4 offset-1">
             <form>
               <h5 className="text-primary">Subscribe to our newsletter</h5>
@@ -60,20 +58,7 @@ const Footer = () => {
         </div>
 
         <div className="d-flex text-light justify-content-between py-4 my-4 border-top">
-          <p>&copy; 2021 Company, Inc. All rights reserved.</p>
-          <span>
-            <ul className="list-unstyled justify-content-center d-flex mb-0">
-              <Link className="ms-3" to="">
-                <Facebook size="30" />
-              </Link>
-              <Link className="ms-3" to="">
-                <Instagram size="30" />
-              </Link>
-              <Link className="ms-3" to="">
-                <Linkedin size="30" />
-              </Link>
-            </ul>
-          </span>
+          <p>&copy; 2022 Company, Inc. All rights reserved.</p>
         </div>
       </footer>
     </section>
